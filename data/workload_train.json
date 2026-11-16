@@ -1,0 +1,850 @@
+{
+  "queries": [
+    {
+      "name": "tr000",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-01T13:11:37.923980",
+          "hi": "2026-09-08T13:11:37.923980"
+        }
+      ]
+    },
+    {
+      "name": "tr001",
+      "template": "process_attribution",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "process_id",
+          "op": "eq",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "tr002",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 1001
+        }
+      ]
+    },
+    {
+      "name": "tr003",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Netwtw10"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-08T03:20:09.746393",
+          "hi": "2026-09-22T03:20:09.746393"
+        }
+      ]
+    },
+    {
+      "name": "tr004",
+      "template": "dashboard_window",
+      "weight": 1.0,
+      "projection": [
+        "ts",
+        "provider",
+        "level",
+        "event_id"
+      ],
+      "predicates": [
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-06-21T01:35:56.179197",
+          "hi": "2026-06-22T01:35:56.179197"
+        }
+      ]
+    },
+    {
+      "name": "tr005",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-06-19T23:02:42.239850",
+          "hi": "2026-06-26T23:02:42.239850"
+        }
+      ]
+    },
+    {
+      "name": "tr006",
+      "template": "dashboard_window",
+      "weight": 1.0,
+      "projection": [
+        "ts",
+        "provider",
+        "level",
+        "event_id"
+      ],
+      "predicates": [
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-26T16:17:46.539055",
+          "hi": "2026-09-27T16:17:46.539055"
+        }
+      ]
+    },
+    {
+      "name": "tr007",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "VfpExt"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-10-28T07:52:03.363766",
+          "hi": "2026-11-11T07:52:03.363766"
+        }
+      ]
+    },
+    {
+      "name": "tr008",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 2005
+        }
+      ]
+    },
+    {
+      "name": "tr009",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-Auditing"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-08-23T22:14:22.430801",
+          "hi": "2026-09-06T22:14:22.430801"
+        }
+      ]
+    },
+    {
+      "name": "tr010",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-Auditing"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-07-11T23:55:59.425327",
+          "hi": "2026-07-25T23:55:59.425327"
+        }
+      ]
+    },
+    {
+      "name": "tr011",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-StateRepository"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-08-10T18:14:46.528340",
+          "hi": "2026-08-24T18:14:46.528340"
+        }
+      ]
+    },
+    {
+      "name": "tr012",
+      "template": "dashboard_window",
+      "weight": 1.0,
+      "projection": [
+        "ts",
+        "provider",
+        "level",
+        "event_id"
+      ],
+      "predicates": [
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-08-29T06:54:31.328104",
+          "hi": "2026-08-30T06:54:31.328104"
+        }
+      ]
+    },
+    {
+      "name": "tr013",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 16394
+        }
+      ]
+    },
+    {
+      "name": "tr014",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 8001
+        }
+      ]
+    },
+    {
+      "name": "tr015",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-UserPnp"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-11-01T23:08:07.443673",
+          "hi": "2026-11-15T23:08:07.443673"
+        }
+      ]
+    },
+    {
+      "name": "tr016",
+      "template": "dashboard_window",
+      "weight": 1.0,
+      "projection": [
+        "ts",
+        "provider",
+        "level",
+        "event_id"
+      ],
+      "predicates": [
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-29T00:28:20.786789",
+          "hi": "2026-09-30T00:28:20.786789"
+        }
+      ]
+    },
+    {
+      "name": "tr017",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-07-11T18:21:24.435369",
+          "hi": "2026-07-18T18:21:24.435369"
+        }
+      ]
+    },
+    {
+      "name": "tr018",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-Auditing"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-28T13:58:46.945530",
+          "hi": "2026-10-12T13:58:46.945530"
+        }
+      ]
+    },
+    {
+      "name": "tr019",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-10-16T13:01:34.143885",
+          "hi": "2026-10-23T13:01:34.143885"
+        }
+      ]
+    },
+    {
+      "name": "tr020",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-11-03T00:39:49.381058",
+          "hi": "2026-11-10T00:39:49.381058"
+        }
+      ]
+    },
+    {
+      "name": "tr021",
+      "template": "dashboard_window",
+      "weight": 1.0,
+      "projection": [
+        "ts",
+        "provider",
+        "level",
+        "event_id"
+      ],
+      "predicates": [
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-06-05T19:48:15.943818",
+          "hi": "2026-06-06T19:48:15.943818"
+        }
+      ]
+    },
+    {
+      "name": "tr022",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Time-Service"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-08-15T04:11:55.783145",
+          "hi": "2026-08-29T04:11:55.783145"
+        }
+      ]
+    },
+    {
+      "name": "tr023",
+      "template": "channel_audit",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "channel",
+          "op": "eq",
+          "value": "Security"
+        },
+        {
+          "column": "level",
+          "op": "ge",
+          "lo": 3
+        }
+      ]
+    },
+    {
+      "name": "tr024",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-WindowsUpdateClient"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-30T09:56:42.813966",
+          "hi": "2026-10-14T09:56:42.813966"
+        }
+      ]
+    },
+    {
+      "name": "tr025",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-Auditing"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-07-25T13:58:15.059112",
+          "hi": "2026-08-08T13:58:15.059112"
+        }
+      ]
+    },
+    {
+      "name": "tr026",
+      "template": "channel_audit",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "channel",
+          "op": "eq",
+          "value": "Microsoft-Windows-Store/Operational"
+        },
+        {
+          "column": "level",
+          "op": "ge",
+          "lo": 3
+        }
+      ]
+    },
+    {
+      "name": "tr027",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Install-Agent"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-06-20T21:08:01.073274",
+          "hi": "2026-07-04T21:08:01.073274"
+        }
+      ]
+    },
+    {
+      "name": "tr028",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Windows Error Reporting"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-07-02T08:46:30.265842",
+          "hi": "2026-07-16T08:46:30.265842"
+        }
+      ]
+    },
+    {
+      "name": "tr029",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 8001
+        }
+      ]
+    },
+    {
+      "name": "tr030",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-HttpService"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-06-25T08:45:26.655760",
+          "hi": "2026-07-09T08:45:26.655760"
+        }
+      ]
+    },
+    {
+      "name": "tr031",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 5379
+        }
+      ]
+    },
+    {
+      "name": "tr032",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-07-09T03:06:16.671528",
+          "hi": "2026-07-16T03:06:16.671528"
+        }
+      ]
+    },
+    {
+      "name": "tr033",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Dhcp-Client"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-10-04T03:30:42.481834",
+          "hi": "2026-10-18T03:30:42.481834"
+        }
+      ]
+    },
+    {
+      "name": "tr034",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-10-22T13:09:15.695722",
+          "hi": "2026-10-29T13:09:15.695722"
+        }
+      ]
+    },
+    {
+      "name": "tr035",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-SPP"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-10-11T18:49:55.932674",
+          "hi": "2026-10-25T18:49:55.932674"
+        }
+      ]
+    },
+    {
+      "name": "tr036",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 4798
+        }
+      ]
+    },
+    {
+      "name": "tr037",
+      "template": "channel_audit",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "channel",
+          "op": "eq",
+          "value": "System"
+        },
+        {
+          "column": "level",
+          "op": "ge",
+          "lo": 3
+        }
+      ]
+    },
+    {
+      "name": "tr038",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Service Control Manager"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-07-25T00:54:47.422039",
+          "hi": "2026-08-08T00:54:47.422039"
+        }
+      ]
+    },
+    {
+      "name": "tr039",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-Auditing"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-06-19T05:49:19.154288",
+          "hi": "2026-07-03T05:49:19.154288"
+        }
+      ]
+    },
+    {
+      "name": "tr040",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 104
+        }
+      ]
+    },
+    {
+      "name": "tr041",
+      "template": "event_lookup",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "event_id",
+          "op": "eq",
+          "value": 7021
+        }
+      ]
+    },
+    {
+      "name": "tr042",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-11-03T04:46:34.103645",
+          "hi": "2026-11-10T04:46:34.103645"
+        }
+      ]
+    },
+    {
+      "name": "tr043",
+      "template": "error_triage",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "level",
+          "op": "range",
+          "lo": 1,
+          "hi": 2
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-03T20:54:39.430954",
+          "hi": "2026-09-10T20:54:39.430954"
+        }
+      ]
+    },
+    {
+      "name": "tr044",
+      "template": "process_attribution",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "process_id",
+          "op": "eq",
+          "value": 1676
+        }
+      ]
+    },
+    {
+      "name": "tr045",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Time-Service"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-10-06T07:16:25.079034",
+          "hi": "2026-10-20T07:16:25.079034"
+        }
+      ]
+    },
+    {
+      "name": "tr046",
+      "template": "provider_drilldown",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "provider",
+          "op": "eq",
+          "value": "Microsoft-Windows-Security-Auditing"
+        },
+        {
+          "column": "ts",
+          "op": "range",
+          "lo": "2026-09-24T13:21:10.208234",
+          "hi": "2026-10-08T13:21:10.208234"
+        }
+      ]
+    },
+    {
+      "name": "tr047",
+      "template": "process_attribution",
+      "weight": 1.0,
+      "projection": null,
+      "predicates": [
+        {
+          "column": "process_id",
+          "op": "eq",
+          "value": 1676
+        }
+      ]
+    }
+  ]
+}
