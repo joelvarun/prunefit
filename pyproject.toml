@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prunefit"
+version = "0.1.0"
+description = "Fit a Parquet row-group layout to the query log that will scan it"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Joshua Nishanth Tarun A" }]
+license = { text = "MIT" }
+dependencies = ["pyarrow>=14.0", "numpy>=1.24"]
+
+[project.optional-dependencies]
+charts = ["matplotlib>=3.7"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+prunefit = "prunefit.cli:main"
+
+[tool.setuptools]
+packages = ["prunefit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
